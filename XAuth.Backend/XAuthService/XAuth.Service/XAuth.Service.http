@@ -1,0 +1,6 @@
+@XAuth.Service_HostAddress = http://localhost:5205
+
+GET {{XAuth.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
