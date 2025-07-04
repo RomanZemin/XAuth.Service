@@ -12,12 +12,21 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="9.0.6" />
+    <PackageReference Include="Quartz" Version="3.14.0" />
+    <PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.14.0" />
     <PackageReference Include="Scalar.AspNetCore" Version="2.5.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\XAuth.BackgroundJobs\XAuth.BackgroundJobs.csproj" />
+    <ProjectReference Include="..\XAuth.Identity\XAuth.Identity.csproj" />
     <ProjectReference Include="..\XAuth.Persistance\XAuth.Persistance.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="XAuth.Identity\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="XAuth.Identity\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="XAuth.Identity\obj\XAuth.Identity.csproj.nuget.dgspec.json" />
   </ItemGroup>
 
 </Project>

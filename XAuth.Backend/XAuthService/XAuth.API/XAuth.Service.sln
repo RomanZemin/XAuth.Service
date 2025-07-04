@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XAuth.Common", "XAuth.Commo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAuth.Persistance", "..\XAuth.Persistance\XAuth.Persistance.csproj", "{209FC7AB-826A-42E0-BABC-4ADBF7A0F6FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAuth.Identity", "..\XAuth.Identity\XAuth.Identity.csproj", "{6418EA55-2906-4441-97B9-CC0832AB2FEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{209FC7AB-826A-42E0-BABC-4ADBF7A0F6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{209FC7AB-826A-42E0-BABC-4ADBF7A0F6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{209FC7AB-826A-42E0-BABC-4ADBF7A0F6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6418EA55-2906-4441-97B9-CC0832AB2FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6418EA55-2906-4441-97B9-CC0832AB2FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6418EA55-2906-4441-97B9-CC0832AB2FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6418EA55-2906-4441-97B9-CC0832AB2FEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{BE7A691E-EE51-425E-BF18-367B4F531EE3} = {69EC96EA-AAFD-4ABD-9CE3-1D8986E4EEC9}
 		{4AFB188F-D69A-4CFC-9BB2-DF96DEA361E7} = {DB0CAE7D-1EB2-4806-A914-2E47C385A8B2}
 		{209FC7AB-826A-42E0-BABC-4ADBF7A0F6FE} = {DB0CAE7D-1EB2-4806-A914-2E47C385A8B2}
+		{6418EA55-2906-4441-97B9-CC0832AB2FEF} = {DB0CAE7D-1EB2-4806-A914-2E47C385A8B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ACD83E77-ABAC-4176-99D0-E01AC500208B}

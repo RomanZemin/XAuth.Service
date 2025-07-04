@@ -14,7 +14,11 @@ public sealed class Program
 
 
         builder.Services.AddOpenApi();
-        builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+        builder.Services.AddMediatR(cfg =>
+        {
+            cfg.RegisterServicesFromAssemblyContaining<Program>();
+            cfg.Lifetime = ServiceLifetime.Scoped;
+        });
         builder.Services.AddControllers();
 
         var app = builder.Build();
@@ -66,6 +70,7 @@ public sealed class Program
 
         app.Run();
 
+        /*
         builder.Services.AddMassTransit(x =>
         {
             x.UsingRabbitMq((context, cfg) =>
@@ -80,7 +85,10 @@ public sealed class Program
 
             x.AddQuartzConsumers();
         });
-
+        
+        builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
+        */
+        
         builder.Services.AddQuartz(q =>
         {
             q.UseMicrosoftDependencyInjectionJobFactory();
@@ -94,6 +102,6 @@ public sealed class Program
                 .WithCronSchedule("0 0 3 * * ?")); // Every day at 3 AM
         });
 
-        builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
+      
     }
 }

@@ -1,3 +1,12 @@
 ﻿namespace XAuth.Application.DTOs;
 
-public record UserDto(Guid Id, string Email, bool EmailConfirmed);
+public record UserDto(
+    string? UserId,
+    string? UserName,
+    string? Email,
+    bool? EmailConfirmed,
+    string? PhoneNumber,
+    bool? PhoneNumberConfirmed,
+    string? JwtToken,
+    string? ExpiresAt
+    );
